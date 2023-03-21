@@ -1,3 +1,4 @@
+import { Canvas } from '@react-three/fiber'
 import React from 'react'
 
 type Props = {}
@@ -5,7 +6,12 @@ type Props = {}
 const App = (props: Props) =>
 {
   return (
-    <div>App</div>
+    <>
+      <div>Outside Canvas</div>
+      <Canvas>
+
+      </Canvas>
+    </>
   )
 }
 
