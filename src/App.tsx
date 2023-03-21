@@ -1,3 +1,4 @@
+import { Sky } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import React from 'react'
 
@@ -7,9 +8,8 @@ const App = (props: Props) =>
 {
   return (
     <>
-      <div>Outside Canvas</div>
       <Canvas>
-
+        <Sky />
       </Canvas>
     </>
   )
