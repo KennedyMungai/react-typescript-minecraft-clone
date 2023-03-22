@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react"
 import { Mesh, Vector3 } from "three"
 import useKeyboard from "../hooks/useKeyboard"
 
+const JUMP_FORCE = 10
 
 const Player = () =>
 {
@@ -38,7 +39,7 @@ const Player = () =>
 
         if (actions.jump)
         {
-            api.velocity.set(velocity.current[0], 1, velocity.current[2])
+            api.velocity.set(velocity.current[0], JUMP_FORCE, velocity.current[2])
         }
     })
 
