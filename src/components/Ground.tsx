@@ -1,5 +1,4 @@
 import { usePlane } from '@react-three/cannon'
-import React from 'react'
 import { Mesh, RepeatWrapping } from 'three'
 import { groundTexture } from '../images/textures'
 
