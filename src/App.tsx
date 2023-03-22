@@ -4,6 +4,7 @@ import { Canvas } from '@react-three/fiber'
 import Ground from './components/Ground'
 import Player from './components/Player'
 import './App.css'
+import FPV from './components/FPV'
 
 
 const App = () =>
