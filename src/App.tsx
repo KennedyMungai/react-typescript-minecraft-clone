@@ -18,7 +18,7 @@ const App = (props: Props) =>
           intensity={0.5}
         />
         <Physics>
-
+          <Ground />
         </Physics>
       </Canvas>
     </>
