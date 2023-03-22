@@ -5,9 +5,7 @@ import Ground from './components/Ground'
 import Player from './components/Player'
 
 
-type Props = {}
-
-const App = (props: Props) =>
+const App = () =>
 {
   return (
     <>
