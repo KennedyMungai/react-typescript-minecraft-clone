@@ -38,7 +38,7 @@ const Player = () =>
 
         if (actions.jump)
         {
-            api.velocity.set(0, 1, 0)
+            api.velocity.set(velocity.current[0], 1, velocity.current[2])
         }
     })
 
