@@ -1,6 +1,7 @@
 import { usePlane } from '@react-three/cannon'
 import React from 'react'
 import { Mesh } from 'three'
+import { groundTexture } from '../images/textures'
 
 
 const Ground = () =>
@@ -18,7 +19,7 @@ const Ground = () =>
             />
             <meshStandardMaterial
                 attach='material'
-                color='hotpink'
+                map={groundTexture}
             />
         </mesh>
     )
