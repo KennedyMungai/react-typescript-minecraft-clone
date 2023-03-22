@@ -9,7 +9,7 @@ const Cube = ({ position, texture }) =>
         position
     }))
 
-    const active_texture = texture
+    const active_texture = textures[texture]
 
     console.log(active_texture)
 
