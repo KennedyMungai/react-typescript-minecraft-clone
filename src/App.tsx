@@ -22,6 +22,7 @@ const App = () =>
         <FPV />
         <Physics>
           <Player />
+          <Cubes />
           <Ground />
         </Physics>
       </Canvas>
