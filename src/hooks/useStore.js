@@ -5,7 +5,13 @@ import { create } from "zustand";
 const useStore = create((set) =>
 ({
     texture: 'dirt',
-    cubes: [],
+    cubes: [
+        {
+            key: nanoid(),
+            position: [1, 1, 1],
+            texture: 'dirt'
+        }
+    ],
     addCube: (x, y, z) =>
     {
         set((prev) => (
