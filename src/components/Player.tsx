@@ -1,7 +1,7 @@
 import { useSphere } from "@react-three/cannon"
-import { useThree } from "@react-three/fiber"
+import { useFrame, useThree } from "@react-three/fiber"
 import { useRef } from "react"
-import { Mesh } from "three"
+import { Mesh, Vector3 } from "three"
 
 
 const Player = () =>
@@ -15,6 +15,11 @@ const Player = () =>
     }))
 
     const position = useRef<[number, number, number]>([0, 0, 0])
+
+    useFrame(() => 
+    {
+        camera.position.copy(new Vector3(position.current[0], position.current[1], position.current[2]))
+    })
 
     return (
         <mesh ref={ref}>
