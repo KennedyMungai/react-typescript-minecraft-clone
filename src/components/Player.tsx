@@ -12,6 +12,12 @@ const Player = () =>
         type: 'Dynamic',
         position: [0, 0, 0]
     }))
+
+    return (
+        <mesh ref={ref}>
+
+        </mesh>
+    )
 }
 
 export default Player       
