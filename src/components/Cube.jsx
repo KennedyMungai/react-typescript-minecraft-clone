@@ -1,4 +1,4 @@
-const Cube = ({ posiition, texture }) =>
+const Cube = ({ position, texture }) =>
 {
 
 }
