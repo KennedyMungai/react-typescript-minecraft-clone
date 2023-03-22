@@ -15,6 +15,7 @@ const Cubes = () =>
             <Cube
                 key={key}
                 position={position}
+                texture={texture}
             />
         )
     })
