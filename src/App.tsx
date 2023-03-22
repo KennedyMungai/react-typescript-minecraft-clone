@@ -24,7 +24,7 @@ const App = () =>
           <Ground />
         </Physics>
       </Canvas>
-      <div className="cursor">
+      <div className="cursor absolute centered">
         +
       </div>
     </>
