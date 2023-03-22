@@ -19,7 +19,13 @@ const Ground = () =>
     groundTexture.repeat.set(100, 100)
 
     return (
-        <mesh ref={ref}>
+        <mesh
+            ref={ref}
+            onClick={(e) =>
+            {
+                e.stopPropagation()
+            }}
+        >
             <planeBufferGeometry
                 attach='geometry'
                 args={[100, 100]}
@@ -28,7 +34,7 @@ const Ground = () =>
                 attach='material'
                 map={groundTexture}
             />
-        </mesh>
+        </mesh >
     )
 }
 
