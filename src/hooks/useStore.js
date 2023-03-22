@@ -10,7 +10,14 @@ const useStore = create((set) =>
     {
         set((prev) => (
             {
-                cubes: [...prevCubes, { key: }]
+                cubes: [
+                    ...prev.Cubes,
+                    {
+                        key: nanoid(),
+                        pos: [x, y, z],
+                        texture: prev.texture
+                    }
+                ]
             }
         ))
     },
