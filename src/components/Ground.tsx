@@ -1,5 +1,6 @@
 import { usePlane } from '@react-three/cannon'
 import { Mesh, NearestFilter, RepeatWrapping } from 'three'
+import useStore from '../hooks/useStore'
 import { groundTexture } from '../images/textures'
 
 
