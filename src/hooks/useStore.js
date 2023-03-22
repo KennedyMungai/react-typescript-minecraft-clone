@@ -1,11 +1,9 @@
 import { create } from "zustand";
 
 
-const useStore = () =>
+const useStore = create(() =>
 {
-    return (
-        <div>useStore</div>
-    )
-}
+
+})
 
 export default useStore
