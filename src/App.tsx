@@ -5,6 +5,7 @@ import Ground from './components/Ground'
 import Player from './components/Player'
 import './App.css'
 import FPV from './components/FPV'
+import Cubes from './components/Cubes'
 
 
 const App = () =>
