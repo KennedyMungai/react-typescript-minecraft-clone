@@ -1,12 +1,6 @@
-import React from 'react'
-
-type Props = {}
-
-const Player = (props: Props) =>
+const Player = () =>
 {
-    return (
-        <div>Player</div>
-    )
+
 }
 
 export default Player
