@@ -8,8 +8,6 @@ const Cubes = () =>
             state.cubes
         ])
 
-    console.log(cubes)
-
     return null
 }
 
