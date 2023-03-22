@@ -3,9 +3,14 @@ import useStore from "../hooks/useStore"
 
 const Cubes = () =>
 {
-    return (
-        <div>Cubes</div>
-    )
+    const [cubes] = useStore((state) =>
+        [
+            state.cubes
+        ])
+
+    console.log(cubes)
+
+    return null
 }
 
 export default Cubes
