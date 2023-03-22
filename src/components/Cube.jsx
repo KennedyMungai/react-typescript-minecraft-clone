@@ -10,9 +10,9 @@ const Cube = ({ position, texture }) =>
         position
     }))
 
-    const active_texture = textures[texture + 'Texture']
+    const activeTexture = textures[texture + 'Texture']
 
-    console.log('active texture', active_texture)
+    console.log('active texture', activeTexture)
 
     return (
         <mesh ref={ref}>
@@ -22,6 +22,7 @@ const Cube = ({ position, texture }) =>
             <meshStandardMaterial
                 attach='material'
                 color='hotpink'
+                map={activeTexture}
             />
         </mesh>
     )
