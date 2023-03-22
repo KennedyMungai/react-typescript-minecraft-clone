@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react"
 import { Mesh, Vector3 } from "three"
 import useKeyboard from "../hooks/useKeyboard"
 
-const JUMP_FORCE = 10
+const JUMP_FORCE = 5
 
 const Player = () =>
 {
