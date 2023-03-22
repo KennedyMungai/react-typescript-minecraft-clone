@@ -3,6 +3,7 @@ import { Sky } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import Ground from './components/Ground'
 import Player from './components/Player'
+import './App.css'
 
 
 const App = () =>
