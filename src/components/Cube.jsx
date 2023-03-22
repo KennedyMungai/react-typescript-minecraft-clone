@@ -21,7 +21,7 @@ const Cube = ({ position, texture }) =>
             />
             <meshStandardMaterial
                 attach='material'
-                color='hotpink'
+                // color='hotpink'
                 map={activeTexture}
             />
         </mesh>
