@@ -8,7 +8,12 @@ const Cubes = () =>
             state.cubes
         ])
 
-    return null
+    return cubes.map((cube) => 
+    {
+        return (
+            <Cube />
+        )
+    })
 }
 
 export default Cubes
