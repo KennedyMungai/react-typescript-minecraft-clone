@@ -1,12 +1,6 @@
-import React from 'react'
-
-type Props = {}
-
-const Cube = (props: Props) =>
+const Cube = () =>
 {
-    return (
-        <div>Cube</div>
-    )
+
 }
 
 export default Cube
