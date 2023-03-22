@@ -9,7 +9,7 @@ const Cubes = () =>
             state.cubes
         ])
 
-    return cubes.map((cube) => 
+    return cubes.map(({ key, x, y, z, texture }) => 
     {
         return (
             <Cube />
