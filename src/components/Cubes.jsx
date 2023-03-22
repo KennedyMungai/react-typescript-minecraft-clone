@@ -12,7 +12,10 @@ const Cubes = () =>
     return cubes.map(({ key, position, texture }) => 
     {
         return (
-            <Cube key={key} />
+            <Cube
+                key={key}
+                position={position}
+            />
         )
     })
 }
