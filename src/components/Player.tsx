@@ -14,7 +14,7 @@ const Player = () =>
         position: [0, 0, 0]
     }))
 
-    const position = useRef<[int, int, int]>([0, 0, 0])
+    const position = useRef<[number, number, number]>([0, 0, 0])
 
     return (
         <mesh ref={ref}>
