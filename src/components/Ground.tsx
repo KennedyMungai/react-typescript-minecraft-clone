@@ -24,6 +24,7 @@ const Ground = () =>
             onClick={(e) =>
             {
                 e.stopPropagation()
+                const [x, y, z] = Object.values(e.point)
             }}
         >
             <planeBufferGeometry
