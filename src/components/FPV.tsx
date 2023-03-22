@@ -1,12 +1,6 @@
-import React from 'react'
-
-type Props = {}
-
-const FPV = (props: Props) =>
+const FPV = () =>
 {
-    return (
-        <div>FPV</div>
-    )
+
 }
 
 export default FPV
