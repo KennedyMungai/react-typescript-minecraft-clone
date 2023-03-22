@@ -35,12 +35,22 @@ const useKeyboard = () =>
     })
 
 
-    const handleKeyDown = useCallback(() =>
+    const handleKeyDown = useCallback((e) =>
     {
+        const action = actionByKey(e.code)
 
+        if (action)
+        {
+            setActions((prev) => 
+            {
+                return ({
+                    ...prev, [action]: true
+                })
+            })
+        }
     }, [])
 
-    const handleKeyUp = useCallback(() =>
+    const handleKeyUp = useCallback((e) =>
     {
 
     }, [])
