@@ -8,7 +8,13 @@ const JUMP_FORCE = 5
 
 const Player = () =>
 {
-    const { moveForward, moveBackward, jump, moveRight, moveLeft } = useKeyboard()
+    const {
+        moveForward,
+        moveBackward,
+        jump,
+        moveRight,
+        moveLeft
+    } = useKeyboard()
 
     const { camera } = useThree()
     const [ref, api] = useSphere<Mesh>(() =>
