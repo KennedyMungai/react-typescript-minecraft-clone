@@ -2,13 +2,12 @@ import { usePlane } from '@react-three/cannon'
 import React from 'react'
 
 
-type Props = {}
-
-const Ground = (props: Props) =>
+const Ground = () =>
 {
-    return (
-        <div>Ground</div>
-    )
+    const [ref] = usePlane(() =>
+    ({
+        rotation: [0, 0, 0], position: [0, 0, 0]
+    }))
 }
 
 export default Ground
