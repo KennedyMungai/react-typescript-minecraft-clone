@@ -1,6 +1,6 @@
 import { useSphere } from "@react-three/cannon"
 import { useFrame, useThree } from "@react-three/fiber"
-import { useRef } from "react"
+import { useEffect, useRef } from "react"
 import { Mesh, Vector3 } from "three"
 
 
@@ -15,6 +15,11 @@ const Player = () =>
     }))
 
     const position = useRef<[number, number, number]>([0, 0, 0])
+
+    useEffect(() =>
+    {
+    }, [])
+
 
     useFrame(() => 
     {
