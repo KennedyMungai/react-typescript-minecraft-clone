@@ -54,6 +54,8 @@ const Player = () =>
             .multiplyScalar(SPEED)
             .applyEuler(camera.rotation)
 
+        api.velocity.set(direction.x, velocity.current[1], direction.z)
+
         if (jump && Math.abs(velocity.current[1]) < 0.05)
         {
             api.velocity.set(velocity.current[0], JUMP_FORCE, velocity.current[2])
