@@ -7,7 +7,7 @@ const actionByKey = (key) =>
         KeyW: 'moveForward',
         KeyA: 'moveLeft',
         KeyD: 'moveRight',
-        KeyS: 'moveBack',
+        KeyS: 'moveBackward',
         Space: 'jump',
         Digit1: 'dirt',
         Digit2: 'grass',
