@@ -1,7 +1,7 @@
 import { Key, useCallback, useEffect, useState } from "react"
 
 
-const actionByKey = (key: Key) =>
+const actionByKey = (key) =>
 {
     const keyActionMap = {
         KeyW: 'moveForward',
