@@ -77,6 +77,7 @@ const useKeyboard = () =>
         }
     }, [handleKeyDown, handleKeyUp])
 
+    return actions
 }
 
 export default useKeyboard
