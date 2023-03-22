@@ -8,7 +8,7 @@ const JUMP_FORCE = 5
 
 const Player = () =>
 {
-    const { moveForward, moveBackward } = useKeyboard()
+    const { moveForward, moveBackward, jump } = useKeyboard()
 
     const { camera } = useThree()
     const [ref, api] = useSphere<Mesh>(() =>
@@ -38,10 +38,10 @@ const Player = () =>
         camera.position.copy(new Vector3(position.current[0], position.current[1], position.current[2]))
 
         const direction = new Vector3()
-        const frontVector = new Vector3(0, 0, ((actions.moveBackward ? 1 : 0) - (actions.moveForward ? 1 : 0)))
+        const frontVector = new Vector3(0, 0, ((moveBackward ? 1 : 0) - (moveForward ? 1 : 0)))
         const sideVector = new Vector3()
 
-        if (actions.jump && Math.abs(velocity.current[1]) < 0.05)
+        if (jump && Math.abs(velocity.current[1]) < 0.05)
         {
             api.velocity.set(velocity.current[0], JUMP_FORCE, velocity.current[2])
         }
