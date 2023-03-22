@@ -11,7 +11,7 @@ const Cube = ({ position, texture }) =>
 
     const active_texture = textures[texture]
 
-    console.log(active_texture)
+    console.log('active texture', active_texture)
 
     return (
         <mesh ref={ref}>
