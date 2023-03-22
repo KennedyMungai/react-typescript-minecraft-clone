@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 const useKeyboard = () =>
 {
@@ -14,6 +14,19 @@ const useKeyboard = () =>
         texture4: false,
         texture5: false,
     })
+
+    useEffect(() =>
+    {
+        document.addEventListener('keydown', handleKeyDown)
+        document.addEventListener('keyup', handleKeyUp)
+
+        return () => 
+        {
+            document.removeEventListener('keydown', handleKeyDown)
+            document.removeEventListener('keyup', handleKeyUp)
+        }
+    }, [])
+
 }
 
 export default useKeyboard
