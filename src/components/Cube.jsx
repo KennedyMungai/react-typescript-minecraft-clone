@@ -9,6 +9,10 @@ const Cube = ({ position, texture }) =>
         position
     }))
 
+    const active_texture = texture
+
+    console.log(active_texture)
+
     return (
         <mesh ref={ref}>
             <boxBufferGeometry
