@@ -1,12 +1,6 @@
-import React from 'react'
-
-type Props = {}
-
-const useKeyboard = (props: Props) =>
+const useKeyboard = () =>
 {
-    return (
-        <div>useKeyboard</div>
-    )
+
 }
 
 export default useKeyboard
