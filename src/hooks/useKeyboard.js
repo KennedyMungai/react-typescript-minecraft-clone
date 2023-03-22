@@ -52,7 +52,17 @@ const useKeyboard = () =>
 
     const handleKeyUp = useCallback((e) =>
     {
+        const action = actionByKey(e.code)
 
+        if (action)
+        {
+            setActions((prev) => 
+            {
+                return ({
+                    ...prev, [action]: false
+                })
+            })
+        }
     }, [])
 
     useEffect(() =>
