@@ -21,6 +21,13 @@ const Player = () =>
         api.position.subscribe((p) => position.current = p)
     }, [api.position])
 
+    const velocity = useRef<[number, number, number]>([0, 0, 0])
+
+    useEffect(() =>
+    {
+        api.velocity.subscribe((v) => velocity.current = v)
+    }, [api.velocity])
+
 
     useFrame(() => 
     {
