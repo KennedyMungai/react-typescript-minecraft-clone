@@ -18,6 +18,7 @@ const Player = () =>
 
     useEffect(() =>
     {
+        api.position.subscribe((p) => position.current = p)
     }, [api.position])
 
 
