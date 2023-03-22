@@ -2,7 +2,7 @@ import { useState } from "react"
 
 const useKeyboard = () =>
 {
-    const [movement, setMovement] = useState({
+    const [actions, setActions] = useState({
         moveForward: false,
         moveBackward: false,
         moveLeft: false,
