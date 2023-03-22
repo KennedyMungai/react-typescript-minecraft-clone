@@ -18,6 +18,7 @@ const Player = () =>
 
     useFrame(() => 
     {
+        console.log('frame')
         camera.position.copy(new Vector3(position.current[0], position.current[1], position.current[2]))
     })
 
