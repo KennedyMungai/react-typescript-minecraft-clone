@@ -1,4 +1,4 @@
-import { useStore } from "zustand"
+import useStore from "../hooks/useStore"
 
 
 const Cubes = () =>
