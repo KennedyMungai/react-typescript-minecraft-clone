@@ -1,4 +1,5 @@
 import useStore from "../hooks/useStore"
+import Cube from "./Cube"
 
 
 const Cubes = () =>
