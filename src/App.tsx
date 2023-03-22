@@ -18,6 +18,7 @@ const App = () =>
         <ambientLight
           intensity={0.5}
         />
+        <FPV />
         <Physics>
           <Player />
           <Ground />
