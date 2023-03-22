@@ -5,6 +5,7 @@ import { Mesh, Vector3 } from "three"
 import useKeyboard from "../hooks/useKeyboard"
 
 const JUMP_FORCE = 5
+const SPEED = 5
 
 const Player = () =>
 {
@@ -46,6 +47,12 @@ const Player = () =>
         const direction = new Vector3()
         const frontVector = new Vector3(0, 0, ((moveBackward ? 1 : 0) - (moveForward ? 1 : 0)))
         const sideVector = new Vector3((moveLeft ? 1 : 0) - (moveRight ? 1 : 0), 0, 0)
+
+        direction
+            .subVectors(frontVector, sideVector)
+            .normalize()
+            .multiplyScalar(SPEED)
+            .applyEuler(camera.rotation)
 
         if (jump && Math.abs(velocity.current[1]) < 0.05)
         {
