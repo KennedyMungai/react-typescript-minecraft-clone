@@ -7,7 +7,7 @@ import { Mesh, Vector3 } from "three"
 const Player = () =>
 {
     const { camera } = useThree()
-    const [ref] = useSphere<Mesh>(() =>
+    const [ref, api] = useSphere<Mesh>(() =>
     ({
         mass: 1,
         type: 'Dynamic',
