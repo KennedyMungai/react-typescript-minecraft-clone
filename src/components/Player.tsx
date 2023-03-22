@@ -11,7 +11,7 @@ const Player = () =>
     ({
         mass: 1,
         type: 'Dynamic',
-        position: [0, 0, 0]
+        position: [0, 0, 10]
     }))
 
     const position = useRef<[number, number, number]>([0, 0, 0])
