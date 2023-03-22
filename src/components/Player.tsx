@@ -18,7 +18,7 @@ const Player = () =>
 
     useEffect(() =>
     {
-    }, [])
+    }, [api.position])
 
 
     useFrame(() => 
