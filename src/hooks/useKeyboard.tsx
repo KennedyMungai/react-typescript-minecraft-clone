@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useCallback, useEffect, useState } from "react"
 
 const useKeyboard = () =>
 {
@@ -14,6 +14,17 @@ const useKeyboard = () =>
         texture4: false,
         texture5: false,
     })
+
+
+    const handleKeyDown = useCallback((e) =>
+    {
+
+    }, [])
+
+    const handleKeyUp = useCallback((e) =>
+    {
+
+    }, [])
 
     useEffect(() =>
     {
