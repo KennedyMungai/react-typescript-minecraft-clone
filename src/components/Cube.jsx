@@ -26,6 +26,38 @@ const Cube = ({ position, texture }) =>
 
                 // Because the geometry is a bunch of triangles not squares
                 const clickedFace = Math.floor(e.faceIndex / 2)
+
+                const { x, y, z } = ref.current.position
+
+                if (clickedFace === 0)
+                {
+                    addCube(x - 1, y, z)
+                }
+
+                if (clickedFace === 0)
+                {
+                    addCube(x + 1, y, z)
+                }
+
+                if (clickedFace === 0)
+                {
+                    addCube(x, y - 1, z)
+                }
+
+                if (clickedFace === 0)
+                {
+                    addCube(x, y + 1, z)
+                }
+
+                if (clickedFace === 0)
+                {
+                    addCube(x, y, z - 1)
+                }
+
+                if (clickedFace === 0)
+                {
+                    addCube(x, y, z + 1)
+                }
             }}
         >
             <boxBufferGeometry
