@@ -3,6 +3,7 @@ import { create } from "zustand";
 
 
 const getLocalStorage = (key) => JSON.parse(window.localStorage.getItem(key))
+const setLocalStorage = (key, value) => JSON.stringify(window.localStorage.setItem(key, value))
 
 
 const useStore = create((set) =>
