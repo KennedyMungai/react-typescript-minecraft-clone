@@ -17,6 +17,11 @@ const TextureSelector = () =>
     useEffect(() =>
     {
         const pressedTexture = [dirt, grass, glass, wood, log]
+
+        if (pressedTexture)
+        {
+            setTexture(pressedTexture)
+        }
     }, [dirt, grass, glass, wood, log])
 
 
