@@ -6,6 +6,7 @@ import Player from './components/Player'
 import './App.css'
 import FPV from './components/FPV'
 import Cubes from './components/Cubes'
+import TextureSelector from './components/TextureSelector'
 
 
 const App = () =>
@@ -29,6 +30,7 @@ const App = () =>
       <div className="cursor absolute centered">
         +
       </div>
+      <TextureSelector />
     </>
   )
 }
