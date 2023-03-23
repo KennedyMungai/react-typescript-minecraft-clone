@@ -34,27 +34,27 @@ const Cube = ({ position, texture }) =>
                     addCube(x - 1, y, z)
                 }
 
-                if (clickedFace === 0)
+                if (clickedFace === 1)
                 {
                     addCube(x + 1, y, z)
                 }
 
-                if (clickedFace === 0)
+                if (clickedFace === 2)
                 {
                     addCube(x, y - 1, z)
                 }
 
-                if (clickedFace === 0)
+                if (clickedFace === 3)
                 {
                     addCube(x, y + 1, z)
                 }
 
-                if (clickedFace === 0)
+                if (clickedFace === 4)
                 {
                     addCube(x, y, z - 1)
                 }
 
-                if (clickedFace === 0)
+                if (clickedFace === 5)
                 {
                     addCube(x, y, z + 1)
                 }
