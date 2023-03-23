@@ -66,6 +66,16 @@ const Cube = ({ position, texture }) =>
                     return
                 }
             }}
+            onPointerMove={(e) => 
+            {
+                e.stopPropagation()
+                setIsHovered(true)
+            }}
+            onPointerOut={(e) => 
+            {
+                e.stopPropagation()
+                setIsHovered(false)
+            }}
         >
             <boxBufferGeometry
                 attach='geometry'
