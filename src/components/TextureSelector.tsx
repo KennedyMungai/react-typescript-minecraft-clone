@@ -14,6 +14,14 @@ const TextureSelector = () =>
         log,
     } = useKeyboard()
 
+    const textures = {
+        dirt,
+        grass,
+        glass,
+        wood,
+        log,
+    }
+
     useEffect(() =>
     {
         const pressedTexture = [dirt, grass, glass, wood, log]
