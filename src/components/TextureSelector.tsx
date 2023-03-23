@@ -67,7 +67,7 @@ const TextureSelector = () =>
 
     return (visible &&
         <div
-            className="absolute centered"
+            className="absolute centered texture-selector"
         >
             {Object.entries(images).map(([k, src]) =>
             {
