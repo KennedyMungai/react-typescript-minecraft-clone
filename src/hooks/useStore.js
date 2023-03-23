@@ -44,7 +44,13 @@ const useStore = create((set) =>
             texture
         }))
     },
-    saveWorld: () => { },
+    saveWorld: () =>
+    {
+        set((prev) =>
+        {
+            setLocalStorage('cubes')
+        })
+    },
     resetWorld: () =>
     {
         set(() => 
