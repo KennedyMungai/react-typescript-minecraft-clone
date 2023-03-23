@@ -29,7 +29,12 @@ const Cube = ({ position, texture }) =>
 
                 const { x, y, z } = ref.current.position
 
-                if (clickedFace === 0)
+                if (e.altKey)
+                {
+                    removeCube(x, y, z)
+                    return
+                }
+                else if (clickedFace === 0)
                 {
                     addCube(x + 1, y, z)
                     return
