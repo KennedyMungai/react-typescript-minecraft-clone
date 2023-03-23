@@ -11,7 +11,7 @@ const useStore = create((set) =>
         set((prev) => (
             {
                 cubes: [
-                    ...prev.Cubes,
+                    ...prev.cubes,
                     {
                         key: nanoid(),
                         pos: [x, y, z],
@@ -23,7 +23,15 @@ const useStore = create((set) =>
     },
     removeCube: (x, y, z) =>
     {
-        console.log('remove', x, y, z)
+        set((prev) => (
+            {
+                cubes: prev.cubes.filter(cube => 
+                {
+                    const [X, Y, Z] = cube
+                    return X != x && Y != y && Z != z
+                })
+            }
+        ))
     },
     setTexture: () => { },
     saveWorld: () => { },
