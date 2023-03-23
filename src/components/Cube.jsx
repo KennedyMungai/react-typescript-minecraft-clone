@@ -51,12 +51,12 @@ const Cube = ({ position, texture }) =>
 
                 if (clickedFace === 4)
                 {
-                    addCube(x, y, z - 1)
+                    addCube(x, y, z + 1)
                 }
 
                 if (clickedFace === 5)
                 {
-                    addCube(x, y, z + 1)
+                    addCube(x, y, z - 1)
                 }
             }}
         >
