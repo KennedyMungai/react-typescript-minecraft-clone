@@ -7,6 +7,7 @@ import './App.css'
 import FPV from './components/FPV'
 import Cubes from './components/Cubes'
 import TextureSelector from './components/TextureSelector'
+import Menu from './components/Menu'
 
 
 const App = () =>
