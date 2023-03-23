@@ -85,7 +85,7 @@ const Cube = ({ position, texture }) =>
                 map={activeTexture}
                 transparent={true}
                 opacity={activeTexture === 'glass' ? 0.5 : 1}
-                color={isHovered ? 'gray' : ''}
+                color={isHovered ? 'gray' : 'white'}
             />
         </mesh>
     )
