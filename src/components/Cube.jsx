@@ -83,6 +83,7 @@ const Cube = ({ position, texture }) =>
             <meshStandardMaterial
                 attach='material'
                 map={activeTexture}
+                color={isHovered ? 'gray' : ''}
             />
         </mesh>
     )
