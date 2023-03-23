@@ -27,7 +27,7 @@ const useStore = create((set) =>
             {
                 cubes: prev.cubes.filter(cube => 
                 {
-                    const [X, Y, Z] = cube
+                    const [X, Y, Z] = cube.position
                     return X != x && Y != y && Z != z
                 })
             }
