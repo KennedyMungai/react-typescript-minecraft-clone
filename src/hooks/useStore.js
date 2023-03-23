@@ -21,7 +21,10 @@ const useStore = create((set) =>
             }
         ))
     },
-    removeCube: () => { },
+    removeCube: (x, y, z) =>
+    {
+        console.log(x, y, z)
+    },
     setTexture: () => { },
     saveWorld: () => { },
     resetWorld: () => { },
