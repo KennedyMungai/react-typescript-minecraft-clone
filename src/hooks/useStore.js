@@ -23,7 +23,7 @@ const useStore = create((set) =>
     },
     removeCube: (x, y, z) =>
     {
-        console.log(x, y, z)
+        console.log('remove', x, y, z)
     },
     setTexture: () => { },
     saveWorld: () => { },
