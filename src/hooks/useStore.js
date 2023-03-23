@@ -33,7 +33,13 @@ const useStore = create((set) =>
             }
         ))
     },
-    setTexture: () => { },
+    setTexture: (texture) => 
+    {
+        set(() => 
+        {
+
+        })
+    },
     saveWorld: () => { },
     resetWorld: () => { },
 }))
