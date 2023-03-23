@@ -18,7 +18,16 @@ const Cube = ({ position, texture }) =>
     console.log('active texture', activeTexture)
 
     return (
-        <mesh ref={ref}>
+        <mesh
+            ref={ref}
+            onClick={(e) => 
+            {
+                e.stopPropagation()
+
+                // Because the geometry is a bunch of triangles not squares
+                const clickedFace = Math.floor(e.faceIndex / 2)
+            }}
+        >
             <boxBufferGeometry
                 attach='geometry'
             />
