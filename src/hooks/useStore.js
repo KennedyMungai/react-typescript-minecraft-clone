@@ -48,7 +48,7 @@ const useStore = create((set) =>
     {
         set((prev) =>
         {
-            setLocalStorage('cubes')
+            setLocalStorage('cubes', prev.cubes)
         })
     },
     resetWorld: () =>
