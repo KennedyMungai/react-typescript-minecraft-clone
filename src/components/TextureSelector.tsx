@@ -12,11 +12,11 @@ import
 
 const images =
 {
-    dirtImg,
-    glassImg,
-    grassImg,
-    logImg,
-    woodImg
+    dirt: dirtImg,
+    glass: glassImg,
+    grass: grassImg,
+    log: logImg,
+    wood: woodImg
 }
 
 const TextureSelector = () =>
