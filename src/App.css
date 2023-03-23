@@ -29,3 +29,7 @@ canvas {
     top: 0px;
     left: 10px;
 }
+
+.texture-selector {
+    transform: scale(10);
+}
