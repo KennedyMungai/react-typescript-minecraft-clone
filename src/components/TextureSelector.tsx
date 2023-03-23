@@ -6,7 +6,13 @@ const TextureSelector = () =>
 {
     const [visible, setVisible] = useState<boolean>(false)
     const [activeTexture] = useStore((state) => [state.texture])
-    const actions = useKeyboard()
+    const {
+        texture1,
+        texture2,
+        texture3,
+        texture4,
+        texture5,
+    } = useKeyboard()
 
     useEffect(() =>
     {
