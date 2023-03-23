@@ -39,10 +39,10 @@ const useStore = create((set) =>
     },
     setTexture: (texture) => 
     {
-        set(() => 
-        {
-
-        })
+        set(() =>
+        ({
+            texture
+        }))
     },
     saveWorld: () => { },
     resetWorld: () => { },
