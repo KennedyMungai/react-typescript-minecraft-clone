@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react"
+import useKeyboard from "../hooks/useKeyboard"
 import useStore from "../hooks/useStore"
 
 const TextureSelector = () =>
 {
     const [visible, setVisible] = useState<boolean>(false)
     const [activeTexture] = useStore((state) => [state.texture])
+    const actions = useKeyboard()
 
     useEffect(() =>
     {
