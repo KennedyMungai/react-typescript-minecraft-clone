@@ -9,7 +9,7 @@ const TextureSelector = () =>
     useEffect(() =>
     {
 
-    }, [])
+    }, [activeTexture])
 
 }
 
