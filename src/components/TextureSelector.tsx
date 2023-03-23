@@ -69,7 +69,7 @@ const TextureSelector = () =>
         <div
             className="absolute centered"
         >
-            {Object.entries(images).map((k, src) =>
+            {Object.entries(images).map(([k, src]) =>
             {
                 return <img
                     key={k}
