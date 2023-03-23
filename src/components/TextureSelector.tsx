@@ -16,7 +16,10 @@ const TextureSelector = () =>
 
     useEffect(() =>
     {
-
+        if (texture1)
+        {
+            setTexture('dirt')
+        }
     }, [texture1, texture2, texture3, texture4, texture5])
 
 
