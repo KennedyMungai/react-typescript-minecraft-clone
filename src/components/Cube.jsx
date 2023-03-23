@@ -1,4 +1,5 @@
 import { useBox } from "@react-three/cannon"
+import useStore from "../hooks/useStore"
 import * as textures from '../images/textures'
 
 
@@ -9,6 +10,8 @@ const Cube = ({ position, texture }) =>
         type: 'Static',
         position
     }))
+
+    const [addCube] = useStore((state) => [state.addCube])
 
     const activeTexture = textures[texture + 'Texture']
 
