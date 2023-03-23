@@ -1,12 +1,6 @@
-import React from 'react'
-
-type Props = {}
-
-const TextureSelector = (props: Props) =>
+const TextureSelector = () =>
 {
-    return (
-        <div>TextureSelector</div>
-    )
+
 }
 
 export default TextureSelector
